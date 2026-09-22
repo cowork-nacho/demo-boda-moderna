@@ -100,6 +100,9 @@
   .btn-press {
     transition: transform 150ms ease-out, background-color 200ms ease-out, color 200ms ease-out, border-color 200ms ease-out;
   }
+  .menu-bar {
+    transition: transform 300ms ease-out, opacity 200ms ease-out, background-color 200ms ease-out;
+  }
 
   /* FAQ accordion */
   .faq-answer {
@@ -192,9 +195,9 @@
     </a>
 
     <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-11 h-11 -mr-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-      <span id="bar1" class="block w-6 h-px bg-graphite transition-transform duration-300"></span>
-      <span id="bar2" class="block w-6 h-px bg-graphite mt-2 transition-opacity duration-200"></span>
-      <span id="bar3" class="block w-6 h-px bg-graphite mt-2 transition-transform duration-300"></span>
+      <span id="bar1" class="menu-bar block w-6 h-px bg-paper transition-transform duration-300"></span>
+      <span id="bar2" class="menu-bar block w-6 h-px bg-paper mt-2 transition-opacity duration-200"></span>
+      <span id="bar3" class="menu-bar block w-6 h-px bg-paper mt-2 transition-transform duration-300"></span>
     </button>
   </div>
 </header>
@@ -777,15 +780,24 @@
   /* ---------- Header scroll state ---------- */
   var header = document.getElementById('site-header');
   var rsvpCta = document.getElementById('rsvp-cta');
+  var menuBars = document.querySelectorAll('.menu-bar');
   function onScroll() {
     if (window.scrollY > 24) {
       header.classList.add('bg-paper/95', 'border-line', 'backdrop-blur');
       rsvpCta.classList.remove('border-paper', 'text-paper', 'hover:bg-paper', 'hover:text-graphite');
       rsvpCta.classList.add('border-graphite', 'text-graphite', 'hover:bg-graphite', 'hover:text-paper');
+      menuBars.forEach(function(bar) {
+        bar.classList.remove('bg-paper');
+        bar.classList.add('bg-graphite');
+      });
     } else {
       header.classList.remove('bg-paper/95', 'border-line', 'backdrop-blur');
       rsvpCta.classList.remove('border-graphite', 'text-graphite', 'hover:bg-graphite', 'hover:text-paper');
       rsvpCta.classList.add('border-paper', 'text-paper', 'hover:bg-paper', 'hover:text-graphite');
+      menuBars.forEach(function(bar) {
+        bar.classList.remove('bg-graphite');
+        bar.classList.add('bg-paper');
+      });
     }
   }
   document.addEventListener('scroll', onScroll, { passive: true });
@@ -809,10 +821,15 @@
       bar1.style.transform = 'translateY(8px) rotate(45deg)';
       bar2.style.opacity = '0';
       bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
+      menuBars.forEach(function(bar) {
+        bar.classList.remove('bg-paper');
+        bar.classList.add('bg-graphite');
+      });
     } else {
       bar1.style.transform = '';
       bar2.style.opacity = '1';
       bar3.style.transform = '';
+      onScroll();
     }
   }
 
