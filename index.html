@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clara &amp; Diego — 24 de septiembre de 2027</title>
+<meta name="description" content="Clara Ferrer &amp; Diego Salas se casan el 24 de septiembre de 2027 en Madrid. Ceremonia, celebración, alojamiento y confirmación de asistencia.">
+<meta property="og:title" content="Clara &amp; Diego — 24 de septiembre de 2027">
+<meta property="og:description" content="Nos casamos en Madrid. Toda la información de la boda: ceremonia, celebración, alojamiento y confirmación de asistencia.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#FAFAF7',
+          graphite: '#16171A',
+          terracotta: '#C1613D',
+          'terracotta-text': '#A6522F',
+          'terracotta-light': '#D68968',
+          'terracotta-soft': '#E4C3B4',
+          line: '#E4E2DB',
+        },
+        fontFamily: {
+          serif: ['Fraunces', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+        maxWidth: {
+          prose: '38rem',
+        },
+      },
+    },
+  };
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/14.2.0/swiper-bundle.min.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/14.2.0/swiper-bundle.min.css">
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #FAFAF7; }
+
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+  @media (min-width: 768px) {
+    section[id] { scroll-margin-top: 104px; }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 700ms ease-out, transform 700ms ease-out;
+  }
+
+  .bw-img {
+    filter: grayscale(1) contrast(1.02);
+  }
+
+  @media (hover: hover) {
+    .link-underline {
+      background-image: linear-gradient(currentColor, currentColor);
+      background-size: 0% 1px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 250ms ease-out;
+    }
+    .link-underline:hover {
+      background-size: 100% 1px;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.03);
+    }
+    .hover-lift:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  .gallery-item img {
+    transition: transform 400ms ease-out;
+  }
+  .hover-lift {
+    transition: transform 200ms ease-out;
+  }
+  .btn-press:active {
+    transform: scale(0.97);
+  }
+  .btn-press {
+    transition: transform 150ms ease-out, background-color 200ms ease-out, color 200ms ease-out, border-color 200ms ease-out;
+  }
+
+  /* FAQ accordion */
+  .faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease-out;
+  }
+  .faq-answer > div { overflow: hidden; }
+  .faq-item.open .faq-answer {
+    grid-template-rows: 1fr;
+  }
+  .faq-icon {
+    transition: transform 250ms ease-out;
+  }
+  .faq-item.open .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  /* mobile menu */
+  #mobile-menu {
+    transition: opacity 250ms ease-out, visibility 250ms ease-out;
+  }
+  #mobile-menu.closed {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #site-header {
+    transition: background-color 250ms ease-out, border-color 250ms ease-out, backdrop-filter 250ms ease-out;
+  }
+
+  /* lightbox */
+  #lightbox {
+    transition: opacity 250ms ease-out, visibility 250ms ease-out;
+  }
+  #lightbox.closed {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #lightbox.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  #lightbox img {
+    transition: transform 250ms ease-out, opacity 250ms ease-out;
+  }
+
+  .swiper-pagination-bullet {
+    background: #16171A !important;
+    opacity: 0.3 !important;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: #C1613D !important;
+  }
+
+  ::selection {
+    background: #C1613D;
+    color: #FAFAF7;
+  }
+
+  input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible {
+    outline: 2px solid #C1613D;
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body class="bg-paper text-graphite font-sans antialiased">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-40 border-b border-transparent">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-[72px] md:h-[88px] flex items-center justify-between">
+    <a href="#inicio" class="font-serif italic text-2xl md:text-3xl tracking-tight" aria-label="Ir a inicio">C·D</a>
+
+    <nav class="hidden lg:flex items-center gap-8 xl:gap-10 text-sm tracking-wide" aria-label="Navegación principal">
+      <a href="#inicio" class="link-underline">Inicio</a>
+      <a href="#historia" class="link-underline">Nuestra historia</a>
+      <a href="#boda" class="link-underline">La boda</a>
+      <a href="#galeria" class="link-underline">Galería</a>
+      <a href="#info" class="link-underline">Info para invitados</a>
+      <a href="#faq" class="link-underline">FAQ</a>
+    </nav>
+
+    <a href="#rsvp" class="hidden lg:inline-flex btn-press hover-lift items-center border border-graphite px-6 py-3 text-sm tracking-wide hover:bg-graphite hover:text-paper">
+      Confirmar asistencia
+    </a>
+
+    <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-11 h-11 -mr-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <span id="bar1" class="block w-6 h-px bg-graphite transition-transform duration-300"></span>
+      <span id="bar2" class="block w-6 h-px bg-graphite mt-2 transition-opacity duration-200"></span>
+      <span id="bar3" class="block w-6 h-px bg-graphite mt-2 transition-transform duration-300"></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div id="mobile-menu" class="closed fixed inset-0 z-30 bg-paper lg:hidden flex flex-col items-center justify-center gap-8 text-xl font-serif">
+  <a href="#inicio" class="mobile-link">Inicio</a>
+  <a href="#historia" class="mobile-link">Nuestra historia</a>
+  <a href="#boda" class="mobile-link">La boda</a>
+  <a href="#galeria" class="mobile-link">Galería</a>
+  <a href="#info" class="mobile-link">Info para invitados</a>
+  <a href="#faq" class="mobile-link">FAQ</a>
+  <a href="#rsvp" class="mobile-link border border-graphite px-8 py-3 text-base font-sans tracking-wide mt-4">Confirmar asistencia</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="inicio" class="relative min-h-[100svh] flex items-end">
+  <div class="absolute inset-0">
+    <img src="img/hero.jpg" alt="Detalle arquitectónico contemporáneo en blanco y negro, curva de fachada minimalista" class="w-full h-full object-cover bw-img" fetchpriority="high">
+    <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/35 to-graphite/10"></div>
+  </div>
+
+  <div class="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-10 pb-16 md:pb-24">
+    <p class="text-paper/80 text-sm md:text-base tracking-[0.2em] uppercase mb-4 md:mb-6 reveal">24 · 09 · 2027 — Madrid</p>
+    <h1 class="font-serif text-paper text-[3.2rem] leading-[0.95] sm:text-7xl md:text-8xl lg:text-9xl reveal">
+      Clara <span class="italic">&amp;</span> Diego
+    </h1>
+    <p class="text-paper/85 mt-6 md:mt-8 max-w-md text-base md:text-lg reveal">
+      Nos casamos, y nos encantaría que estuvierais allí para verlo.
+    </p>
+
+    <div id="countdown" class="mt-10 md:mt-14 grid grid-cols-4 gap-4 md:gap-10 max-w-xl reveal">
+      <div>
+        <span id="cd-days" class="font-serif text-paper text-4xl md:text-6xl tabular-nums">00</span>
+        <p class="text-paper/70 text-[11px] md:text-xs tracking-[0.15em] uppercase mt-1">Días</p>
+      </div>
+      <div>
+        <span id="cd-hours" class="font-serif text-paper text-4xl md:text-6xl tabular-nums">00</span>
+        <p class="text-paper/70 text-[11px] md:text-xs tracking-[0.15em] uppercase mt-1">Horas</p>
+      </div>
+      <div>
+        <span id="cd-minutes" class="font-serif text-paper text-4xl md:text-6xl tabular-nums">00</span>
+        <p class="text-paper/70 text-[11px] md:text-xs tracking-[0.15em] uppercase mt-1">Min</p>
+      </div>
+      <div>
+        <span id="cd-seconds" class="font-serif text-paper text-4xl md:text-6xl tabular-nums">00</span>
+        <p class="text-paper/70 text-[11px] md:text-xs tracking-[0.15em] uppercase mt-1">Seg</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#historia" aria-label="Bajar a la siguiente sección" class="hidden md:flex absolute bottom-8 right-10 z-10 text-paper/70 hover:text-paper items-center gap-2 text-xs tracking-widest uppercase btn-press">
+    Descubrir
+    <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,101.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L128,156.69l66.34-66.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+  </a>
+</section>
+
+<!-- ============ NUESTRA HISTORIA ============ -->
+<section id="historia" class="py-24 md:py-36 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-prose mb-16 md:mb-24 reveal">
+      <h2 class="font-serif text-4xl md:text-5xl">Nuestra historia</h2>
+      <p class="mt-4 text-graphite/70 max-w-md">Cuatro momentos, entre muchos, que nos han traído hasta aquí.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 md:gap-y-28">
+
+      <div class="reveal">
+        <div class="aspect-[4/5] overflow-hidden mb-6">
+          <img src="img/timeline-1.jpg" loading="lazy" alt="Silueta de una pareja caminando de la mano al atardecer" class="w-full h-full object-cover bw-img">
+        </div>
+        <p class="text-terracotta-text text-sm tracking-wide mb-2">Primavera de 2019</p>
+        <h3 class="font-serif text-2xl mb-2">Un café que duró cuatro horas</h3>
+        <p class="text-graphite/75 max-w-prose">Se conocieron en la boda de unos amigos comunes. Lo que iba a ser un café rápido al día siguiente se alargó toda la tarde, y ninguno de los dos quiso que terminara.</p>
+      </div>
+
+      <div class="reveal md:mt-24">
+        <div class="aspect-[4/5] overflow-hidden mb-6">
+          <img src="img/timeline-2.jpg" loading="lazy" alt="Silueta de una pareja frente a un cielo despejado al anochecer" class="w-full h-full object-cover bw-img">
+        </div>
+        <p class="text-terracotta-text text-sm tracking-wide mb-2">Verano de 2021</p>
+        <h3 class="font-serif text-2xl mb-2">Tres semanas por el norte</h3>
+        <p class="text-graphite/75 max-w-prose">Un viaje sin planificar apenas nada, con más lluvia de la esperada y más risas de las que caben en un resumen. Ahí decidieron que querían seguir viajando juntos el resto de la vida.</p>
+      </div>
+
+      <div class="reveal">
+        <div class="aspect-[4/5] overflow-hidden mb-6">
+          <img src="img/timeline-3.jpg" loading="lazy" alt="Siluetas de una pareja de espaldas sobre un acantilado" class="w-full h-full object-cover bw-img">
+        </div>
+        <p class="text-terracotta-text text-sm tracking-wide mb-2">Otoño de 2024</p>
+        <h3 class="font-serif text-2xl mb-2">La pregunta, sin ensayar</h3>
+        <p class="text-graphite/75 max-w-prose">Diego tenía un plan con velas y un restaurante reservado. Se le adelantó todo un día antes, en la cocina de casa, sin anillo todavía a mano. La respuesta fue que sí de todas formas.</p>
+      </div>
+
+      <div class="reveal md:mt-24">
+        <div class="aspect-[4/5] overflow-hidden mb-6">
+          <img src="img/timeline-4.jpg" loading="lazy" alt="Fotografía en primer plano de dos alianzas de boda" class="w-full h-full object-cover bw-img">
+        </div>
+        <p class="text-terracotta-text text-sm tracking-wide mb-2">24 de septiembre de 2027</p>
+        <h3 class="font-serif text-2xl mb-2">El día que llega ahora</h3>
+        <p class="text-graphite/75 max-w-prose">Después de año y medio de preparativos, llega el día. Nos hace mucha ilusión compartirlo con las personas que más queremos — con vosotros.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA BODA ============ -->
+<section id="boda" class="py-24 md:py-36 px-6 md:px-10 bg-graphite text-paper">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-prose mb-16 md:mb-24 reveal">
+      <h2 class="font-serif text-4xl md:text-5xl">La boda</h2>
+      <p class="mt-4 text-paper/65 max-w-md">Dos lugares, un mismo día. Toda la información para que no os perdáis nada.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12">
+
+      <div class="reveal">
+        <div class="aspect-[3/4] overflow-hidden mb-8">
+          <img src="img/venue-ceremonia.jpg" loading="lazy" alt="Interior de una sala con arcos abovedados en piedra clara" class="w-full h-full object-cover bw-img">
+        </div>
+        <p class="text-terracotta-light text-sm tracking-wide mb-2">Ceremonia civil · 18:00h</p>
+        <h3 class="font-serif text-3xl mb-3">Sala Jardín de Cristal</h3>
+        <p class="text-paper/70 max-w-prose mb-5">Una sala de techos altos y arcos de piedra clara, con la luz de la tarde entrando en diagonal. Un espacio sobrio, pensado para que solo importen las palabras que nos digamos.</p>
+        <p class="text-paper/85 text-sm mb-5">C. Velázquez 45, Salamanca, 28001 Madrid</p>
+
+        <div class="aspect-[16/9] mb-5 grayscale contrast-125">
+          <iframe
+            title="Mapa de ubicación de la ceremonia civil"
+            class="w-full h-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Calle+de+Velázquez+45,+Madrid&output=embed">
+          </iframe>
+        </div>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Calle+de+Velázquez+45,+Madrid" target="_blank" rel="noopener" class="btn-press hover-lift inline-flex items-center gap-2 border border-paper/40 px-6 py-3 text-sm tracking-wide hover:bg-paper hover:text-graphite">
+          Cómo llegar
+          <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+        </a>
+      </div>
+
+      <div class="reveal">
+        <div class="aspect-[3/4] overflow-hidden mb-8">
+          <img src="img/venue-celebracion.jpg" loading="lazy" alt="Interior de una nave industrial reformada con vigas de madera y grandes ventanales" class="w-full h-full object-cover bw-img">
+        </div>
+        <p class="text-terracotta-light text-sm tracking-wide mb-2">Celebración · 19:30h</p>
+        <h3 class="font-serif text-3xl mb-3">Nave Central</h3>
+        <p class="text-paper/70 max-w-prose mb-5">Una antigua nave industrial reconvertida en espacio de eventos, con estructura de madera vista, suelo pulido y grandes ventanales. Cena, baile y sobremesa larga hasta que el cuerpo aguante.</p>
+        <p class="text-paper/85 text-sm mb-5">Paseo de la Castellana 200, Madrid</p>
+
+        <div class="aspect-[16/9] mb-5 grayscale contrast-125">
+          <iframe
+            title="Mapa de ubicación de la celebración"
+            class="w-full h-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Paseo+de+la+Castellana+200,+Madrid&output=embed">
+          </iframe>
+        </div>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Paseo+de+la+Castellana+200,+Madrid" target="_blank" rel="noopener" class="btn-press hover-lift inline-flex items-center gap-2 border border-paper/40 px-6 py-3 text-sm tracking-wide hover:bg-paper hover:text-graphite">
+          Cómo llegar
+          <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section id="galeria" class="py-24 md:py-36 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-prose mb-16 md:mb-24 reveal">
+      <h2 class="font-serif text-4xl md:text-5xl">Galería</h2>
+      <p class="mt-4 text-graphite/70 max-w-md">Algunas imágenes que capturan el ambiente que queremos para el día.</p>
+    </div>
+  </div>
+
+  <!-- Desktop / tablet grid -->
+  <div class="hidden sm:grid max-w-6xl mx-auto px-6 md:px-10 grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 reveal" id="gallery-grid">
+    <button class="gallery-item overflow-hidden aspect-square" data-index="0">
+      <img src="img/gallery-1.jpg" loading="lazy" alt="Detalle de mesa de boda con velas y copas de cristal" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="1">
+      <img src="img/gallery-2.jpg" loading="lazy" alt="Mesa de boda vestida en tonos neutros con vajilla oscura" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square md:row-span-2 md:aspect-auto" data-index="2">
+      <img src="img/gallery-3.jpg" loading="lazy" alt="Mesa alargada con candelabros y centros de flores silvestres" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="3">
+      <img src="img/gallery-4.jpg" loading="lazy" alt="Composición floral sobre mesa de boda con mantel blanco" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="4">
+      <img src="img/gallery-5.jpg" loading="lazy" alt="Detalle de sitio en mesa con tarjeta de nombre y cubertería" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="5">
+      <img src="img/gallery-6.jpg" loading="lazy" alt="Fachada de arquitectura contemporánea con curvas geométricas" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="6">
+      <img src="img/gallery-7.jpg" loading="lazy" alt="Detalle arquitectónico de fachada metálica con formas onduladas" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="7">
+      <img src="img/gallery-8.jpg" loading="lazy" alt="Galería de arcos de piedra en perspectiva" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="8">
+      <img src="img/gallery-9.jpg" loading="lazy" alt="Interior de nave industrial vacía con vigas de madera y ventanas" class="w-full h-full object-cover bw-img">
+    </button>
+    <button class="gallery-item overflow-hidden aspect-square" data-index="9">
+      <img src="img/gallery-10.jpg" loading="lazy" alt="Primer plano de dos alianzas de boda sobre cinta de raso" class="w-full h-full object-cover bw-img">
+    </button>
+  </div>
+
+  <!-- Mobile swiper -->
+  <div class="sm:hidden swiper gallery-swiper reveal">
+    <div class="swiper-wrapper px-6">
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="0"><img src="img/gallery-1.jpg" loading="lazy" alt="Detalle de mesa de boda con velas y copas de cristal" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="1"><img src="img/gallery-2.jpg" loading="lazy" alt="Mesa de boda vestida en tonos neutros con vajilla oscura" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="2"><img src="img/gallery-3.jpg" loading="lazy" alt="Mesa alargada con candelabros y centros de flores silvestres" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="3"><img src="img/gallery-4.jpg" loading="lazy" alt="Composición floral sobre mesa de boda con mantel blanco" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="4"><img src="img/gallery-5.jpg" loading="lazy" alt="Detalle de sitio en mesa con tarjeta de nombre y cubertería" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="5"><img src="img/gallery-6.jpg" loading="lazy" alt="Fachada de arquitectura contemporánea con curvas geométricas" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="6"><img src="img/gallery-7.jpg" loading="lazy" alt="Detalle arquitectónico de fachada metálica con formas onduladas" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="7"><img src="img/gallery-8.jpg" loading="lazy" alt="Galería de arcos de piedra en perspectiva" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="8"><img src="img/gallery-9.jpg" loading="lazy" alt="Interior de nave industrial vacía con vigas de madera y ventanas" class="w-full h-full object-cover bw-img"></button></div>
+      <div class="swiper-slide"><button class="gallery-item block w-full aspect-square overflow-hidden" data-index="9"><img src="img/gallery-10.jpg" loading="lazy" alt="Primer plano de dos alianzas de boda sobre cinta de raso" class="w-full h-full object-cover bw-img"></button></div>
+    </div>
+    <div class="swiper-pagination mt-4 !static"></div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" class="closed fixed inset-0 z-50 bg-graphite/95 flex items-center justify-center" role="dialog" aria-modal="true" aria-label="Visor de galería">
+  <button id="lightbox-close" aria-label="Cerrar galería" class="absolute top-6 right-6 md:top-8 md:right-10 text-paper/80 hover:text-paper btn-press">
+    <svg width="28" height="28" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+  </button>
+  <button id="lightbox-prev" aria-label="Imagen anterior" class="absolute left-2 md:left-8 text-paper/80 hover:text-paper btn-press p-3">
+    <svg width="28" height="28" viewBox="0 0 256 256" fill="currentColor"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-[85vw] object-contain bw-img">
+  <button id="lightbox-next" aria-label="Imagen siguiente" class="absolute right-2 md:right-8 text-paper/80 hover:text-paper btn-press p-3">
+    <svg width="28" height="28" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+  </button>
+  <p id="lightbox-count" class="absolute bottom-6 md:bottom-8 text-paper/60 text-sm tracking-wide tabular-nums"></p>
+</div>
+
+<!-- ============ INFO PARA INVITADOS ============ -->
+<section id="info" class="py-24 md:py-36 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-prose mb-16 md:mb-24 reveal">
+      <h2 class="font-serif text-4xl md:text-5xl">Info para invitados</h2>
+      <p class="mt-4 text-graphite/70 max-w-md">Transporte, alojamiento y código de vestimenta — todo lo práctico en un solo sitio.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
+
+      <!-- Transporte -->
+      <div class="reveal">
+        <svg width="32" height="32" viewBox="0 0 256 256" fill="none" stroke="#C1613D" stroke-width="10" class="mb-6"><path d="M56,184a16,16,0,1,0,16,16A16,16,0,0,0,56,184Zm144,0a16,16,0,1,0,16,16A16,16,0,0,0,200,184ZM24,72H221.7a8,8,0,0,1,7.85,9.53L216,152H40L23.24,64.94" stroke-linecap="round" stroke-linejoin="round"/><path d="M40,152l-8-40" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-serif text-2xl mb-4">Transporte</h3>
+        <ul class="space-y-4 text-graphite/75">
+          <li class="flex justify-between gap-4 border-b border-line pb-3">
+            <span>Entre ceremonia y celebración</span>
+            <span class="text-graphite whitespace-nowrap">12 min en coche</span>
+          </li>
+          <li class="flex justify-between gap-4 border-b border-line pb-3">
+            <span>Parking recomendado</span>
+            <span class="text-graphite whitespace-nowrap">Parking Castellana 200</span>
+          </li>
+          <li class="flex justify-between gap-4 border-b border-line pb-3">
+            <span>Distancia a pie del parking</span>
+            <span class="text-graphite whitespace-nowrap">3 min</span>
+          </li>
+          <li class="flex justify-between gap-4">
+            <span>Taxi / VTC</span>
+            <span class="text-graphite whitespace-nowrap">Recomendado tras la cena</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Alojamiento -->
+      <div class="reveal">
+        <svg width="32" height="32" viewBox="0 0 256 256" fill="none" stroke="#C1613D" stroke-width="10" class="mb-6"><path d="M32,216V56" stroke-linecap="round" stroke-linejoin="round"/><path d="M32,176H224a0,0,0,0,1,0,0v40a0,0,0,0,1,0,0H32a0,0,0,0,1,0,0V176A0,0,0,0,1,32,176Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M32,176V112H208a16,16,0,0,1,16,16v48" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="140" r="12"/></svg>
+        <h3 class="font-serif text-2xl mb-4">Alojamiento</h3>
+        <ul class="space-y-4 text-graphite/75">
+          <li class="border-b border-line pb-3">
+            <p class="text-graphite">Hotel Castellana Norte</p>
+            <p class="text-sm">A 8 min andando de Nave Central · desde 110€/noche</p>
+          </li>
+          <li class="border-b border-line pb-3">
+            <p class="text-graphite">Hostal Velázquez</p>
+            <p class="text-sm">A 5 min andando de Sala Jardín de Cristal · desde 75€/noche</p>
+          </li>
+          <li>
+            <p class="text-graphite">Apartamentos Salamanca Suites</p>
+            <p class="text-sm">A 10 min en taxi de ambos lugares · desde 95€/noche</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Vestimenta -->
+      <div class="reveal">
+        <svg width="32" height="32" viewBox="0 0 256 256" fill="none" stroke="#C1613D" stroke-width="10" class="mb-6"><path d="M96,32,80,64V216a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V64L160,32" stroke-linecap="round" stroke-linejoin="round"/><path d="M96,32a32,32,0,0,0,64,0" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-serif text-2xl mb-4">Código de vestimenta</h3>
+        <p class="text-graphite/75 mb-4">Smart / cocktail contemporáneo. Buscamos elegancia sin rigidez — algo con lo que os sintáis cómodos toda la noche, dentro y fuera de la pista de baile.</p>
+        <div class="space-y-3">
+          <div class="flex gap-3">
+            <span class="text-terracotta mt-1">✓</span>
+            <p class="text-sm text-graphite/75">Traje o vestido de cóctel, tonos tierra o neutros preferibles</p>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-terracotta mt-1">✓</span>
+            <p class="text-sm text-graphite/75">Calzado cómodo — habrá césped y baile largo</p>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-graphite/40 mt-1">✕</span>
+            <p class="text-sm text-graphite/75">Blanco, marfil o cualquier tono que pueda confundirse con el de la novia</p>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-graphite/40 mt-1">✕</span>
+            <p class="text-sm text-graphite/75">Vaqueros o calzado deportivo</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MESA DE REGALOS ============ -->
+<section id="regalo" class="py-24 md:py-36 px-6 md:px-10 bg-graphite text-paper">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-prose reveal">
+      <h2 class="font-serif text-4xl md:text-5xl mb-6">Mesa de regalos</h2>
+      <p class="text-paper/75 mb-10 leading-relaxed">
+        Vuestra compañía el 24 de septiembre es, de verdad, el mejor regalo que podemos pedir. Si aun así queréis tener un detalle con nosotros, agradecemos enormemente cualquier aportación para ayudarnos a dar los primeros pasos en nuestra nueva casa.
+      </p>
+
+      <div class="border border-paper/25 p-6 md:p-8 mb-8">
+        <p class="text-xs tracking-[0.15em] uppercase text-paper/50 mb-2">Número de cuenta (ejemplo — placeholder de demo)</p>
+        <p class="font-serif text-xl md:text-2xl tracking-wide">ES00 0000 0000 0000 0000 0000</p>
+      </div>
+
+      <a href="#" class="btn-press hover-lift inline-flex items-center gap-2 border border-paper/40 px-6 py-3 text-sm tracking-wide hover:bg-paper hover:text-graphite">
+        Ver lista de regalos
+        <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section id="rsvp" class="py-24 md:py-36 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-prose mb-12 md:mb-16 reveal">
+      <h2 class="font-serif text-4xl md:text-5xl">Confirmar asistencia</h2>
+      <p class="mt-4 text-graphite/70 max-w-md">Nos ayuda muchísimo saber si contamos con vosotros antes del <strong class="text-graphite">15 de julio de 2027</strong>.</p>
+    </div>
+
+    <div class="max-w-2xl reveal">
+      <form id="rsvp-form" action="https://formsubmit.co/demo@claraydiego-boda.example" method="POST" class="space-y-8" novalidate>
+        <input type="hidden" name="_subject" value="Nueva confirmación — Boda Clara &amp; Diego">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label for="nombre" class="block text-sm tracking-wide mb-2">Nombre completo <span class="text-terracotta-text">*</span></label>
+          <input type="text" id="nombre" name="Nombre completo" required
+            class="w-full border-0 border-b border-graphite/30 bg-transparent py-3 focus:border-terracotta transition-colors duration-200 outline-none">
+          <p class="error-msg hidden text-terracotta-text text-xs mt-2">Por favor, escribe tu nombre completo.</p>
+        </div>
+
+        <fieldset>
+          <legend class="block text-sm tracking-wide mb-3">¿Asistes? <span class="text-terracotta-text">*</span></legend>
+          <div class="flex gap-8">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="radio" name="Asiste" value="Sí, allí estaré" required class="accent-terracotta w-4 h-4">
+              <span>Sí, allí estaré</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="radio" name="Asiste" value="No podré ir" required class="accent-terracotta w-4 h-4">
+              <span>No podré ir</span>
+            </label>
+          </div>
+          <p class="error-msg hidden text-terracotta-text text-xs mt-2">Indica si asistirás o no.</p>
+        </fieldset>
+
+        <div>
+          <label for="acompanantes" class="block text-sm tracking-wide mb-2">Número de acompañantes</label>
+          <select id="acompanantes" name="Acompañantes"
+            class="w-full border-0 border-b border-graphite/30 bg-transparent py-3 focus:border-terracotta transition-colors duration-200 outline-none">
+            <option value="0">Solo yo</option>
+            <option value="1">1 acompañante</option>
+            <option value="2">2 acompañantes</option>
+            <option value="3">3 acompañantes</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="alergias" class="block text-sm tracking-wide mb-2">Restricciones alimentarias o alergias</label>
+          <input type="text" id="alergias" name="Alergias" placeholder="Ej. celiaquía, vegano, sin frutos secos..."
+            class="w-full border-0 border-b border-graphite/30 bg-transparent py-3 placeholder:text-graphite/35 focus:border-terracotta transition-colors duration-200 outline-none">
+        </div>
+
+        <div>
+          <label for="cancion" class="block text-sm tracking-wide mb-2">Una canción que no puede faltar en la fiesta</label>
+          <input type="text" id="cancion" name="Canción" placeholder="Título — artista"
+            class="w-full border-0 border-b border-graphite/30 bg-transparent py-3 placeholder:text-graphite/35 focus:border-terracotta transition-colors duration-200 outline-none">
+        </div>
+
+        <div>
+          <label for="mensaje" class="block text-sm tracking-wide mb-2">Un mensaje para los novios</label>
+          <textarea id="mensaje" name="Mensaje" rows="4"
+            class="w-full border-0 border-b border-graphite/30 bg-transparent py-3 placeholder:text-graphite/35 focus:border-terracotta transition-colors duration-200 outline-none resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="btn-press hover-lift bg-graphite text-paper px-10 py-4 text-sm tracking-wide hover:bg-terracotta">
+          Enviar confirmación
+        </button>
+      </form>
+
+      <div id="rsvp-success" class="hidden text-center py-16">
+        <svg width="40" height="40" viewBox="0 0 256 256" fill="none" stroke="#C1613D" stroke-width="10" class="mx-auto mb-6"><circle cx="128" cy="128" r="96"/><path d="M92,136l24,24,48-48" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-serif text-3xl mb-3">Gracias por confirmar</h3>
+        <p class="text-graphite/70 max-w-sm mx-auto">Hemos recibido vuestra respuesta. Nos hace muchísima ilusión — nos vemos el 24 de septiembre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="py-24 md:py-36 px-6 md:px-10 bg-graphite text-paper">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-prose mb-16 md:mb-24 reveal">
+      <h2 class="font-serif text-4xl md:text-5xl">Preguntas frecuentes</h2>
+    </div>
+
+    <div class="max-w-3xl divide-y divide-paper/15" id="faq-list">
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Puedo llevar niños?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">Por supuesto — son bienvenidos. Habrá una zona tranquila habilitada en Nave Central para que puedan descansar si la fiesta se alarga.</div>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Hay menú para alergias o intolerancias?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">Sí. Solo indícalo en el formulario de confirmación y la cocina preparará una alternativa adaptada.</div>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Cuál es el código de vestimenta?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">Smart / cocktail contemporáneo. Todos los detalles están en la sección "Info para invitados", más arriba.</div>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Dónde aparco?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">Recomendamos el Parking Castellana 200, a solo 3 minutos andando de Nave Central. Para la ceremonia hay aparcamiento en calle en la zona de Salamanca.</div>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Qué pasa si llueve?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">Ambos espacios son interiores, así que la boda sigue adelante pase lo que pase con el tiempo.</div>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Hasta qué hora dura la fiesta?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">La música termina sobre las 3:00h. A partir de ahí, cada uno decide cuánto aguanta.</div>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Puedo hacer fotos durante la ceremonia?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">Preferimos una ceremonia "unplugged": os pedimos que guardéis los móviles durante esos 20 minutos y disfrutéis del momento. Habrá fotógrafo profesional y compartiremos todo después.</div>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-trigger w-full flex items-center justify-between text-left gap-4" aria-expanded="false">
+          <span class="font-serif text-xl md:text-2xl">¿Hay guardarropa?</span>
+          <span class="faq-icon text-terracotta text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="pt-4 text-paper/70 max-w-prose">Sí, Nave Central cuenta con guardarropa a la entrada durante toda la noche.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÚSICA ============ -->
+<section id="musica" class="py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto text-center">
+    <div class="max-w-lg mx-auto reveal">
+      <h2 class="font-serif text-3xl md:text-4xl mb-4">¿Qué no puede faltar en la fiesta?</h2>
+      <p class="text-graphite/70 mb-8">Estamos montando la playlist de la noche entre todos. Añade esa canción que sabes que nos va a hacer bailar.</p>
+      <a href="#" class="btn-press hover-lift inline-flex items-center gap-2 border border-graphite px-6 py-3 text-sm tracking-wide hover:bg-graphite hover:text-paper">
+        Añadir canción en Spotify
+        <svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm31.87,146.42a6,6,0,0,1-8.29,1.85c-22.7-13.9-51.28-17-84.94-9.33a6,6,0,0,1-2.66-11.7c36.62-8.36,68.05-4.74,93.14,10.79A6,6,0,0,1,159.87,170.42Zm12.68-27.65a7.51,7.51,0,0,1-10.34,2.35c-26-16-65.6-20.66-96.31-11.3a7.5,7.5,0,1,1-4.35-14.36c35.29-10.75,79-5.54,109.35,13A7.5,7.5,0,0,1,172.55,142.77Zm1.1-28.75c-31.17-18.53-82.88-20.24-112.7-11.19a9,9,0,1,1-5.22-17.23c34.2-10.39,91-8.38,127,12.75a9,9,0,1,1-9.13,15.67Z"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" class="py-16 md:py-20 px-6 md:px-10 border-t border-line">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+    <div class="reveal">
+      <p class="text-xs tracking-[0.15em] uppercase text-graphite/60 mb-3">¿Dudas de última hora?</p>
+      <div class="flex flex-col sm:flex-row gap-x-8 gap-y-2 text-lg font-serif">
+        <span>Clara — +34 600 00 00 02</span>
+        <span>Diego — +34 600 00 00 03</span>
+      </div>
+    </div>
+    <div class="reveal text-left md:text-right">
+      <p class="text-xs tracking-[0.15em] uppercase text-graphite/60 mb-2">Compartid el día con</p>
+      <p class="font-serif italic text-2xl text-terracotta">#ClaraYDiego2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 md:px-10 py-16 border-t border-line">
+  <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-6">
+    <a href="#inicio" class="font-serif italic text-3xl">C·D</a>
+    <p class="text-graphite/60 max-w-xs">24 de septiembre de 2027 — Madrid. Con muchísimas ganas de veros allí.</p>
+
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-graphite/60" aria-label="Navegación de pie de página">
+      <a href="#inicio" class="link-underline">Inicio</a>
+      <a href="#historia" class="link-underline">Historia</a>
+      <a href="#boda" class="link-underline">La boda</a>
+      <a href="#galeria" class="link-underline">Galería</a>
+      <a href="#info" class="link-underline">Info</a>
+      <a href="#faq" class="link-underline">FAQ</a>
+      <a href="#rsvp" class="link-underline">RSVP</a>
+    </nav>
+
+    <p class="text-xs text-graphite/60 mt-6">Diseño y desarrollo — Estudio Nacho Gallardo</p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  "use strict";
+
+  /* ---------- Header scroll state ---------- */
+  var header = document.getElementById('site-header');
+  function onScroll() {
+    if (window.scrollY > 24) {
+      header.classList.add('bg-paper/95', 'border-line', 'backdrop-blur');
+    } else {
+      header.classList.remove('bg-paper/95', 'border-line', 'backdrop-blur');
+    }
+  }
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- Mobile menu ---------- */
+  var menuToggle = document.getElementById('menu-toggle');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var bar1 = document.getElementById('bar1');
+  var bar2 = document.getElementById('bar2');
+  var bar3 = document.getElementById('bar3');
+  var menuOpen = false;
+
+  function setMenu(open) {
+    menuOpen = open;
+    mobileMenu.classList.toggle('open', open);
+    mobileMenu.classList.toggle('closed', !open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) {
+      bar1.style.transform = 'translateY(8px) rotate(45deg)';
+      bar2.style.opacity = '0';
+      bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
+    } else {
+      bar1.style.transform = '';
+      bar2.style.opacity = '1';
+      bar3.style.transform = '';
+    }
+  }
+
+  menuToggle.addEventListener('click', function() { setMenu(!menuOpen); });
+  document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() { setMenu(false); });
+  });
+
+  /* ---------- Countdown ---------- */
+  var weddingDate = new Date('2027-09-24T18:00:00+02:00').getTime();
+  var elDays = document.getElementById('cd-days');
+  var elHours = document.getElementById('cd-hours');
+  var elMinutes = document.getElementById('cd-minutes');
+  var elSeconds = document.getElementById('cd-seconds');
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function tickCountdown() {
+    var now = Date.now();
+    var diff = weddingDate - now;
+    if (diff < 0) diff = 0;
+
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    var minutes = Math.floor((diff / (1000 * 60)) % 60);
+    var seconds = Math.floor((diff / 1000) % 60);
+
+    elDays.textContent = pad(days);
+    elHours.textContent = pad(hours);
+    elMinutes.textContent = pad(minutes);
+    elSeconds.textContent = pad(seconds);
+  }
+  tickCountdown();
+  setInterval(tickCountdown, 1000);
+
+  /* ---------- Scroll reveals ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(function(el) { io.observe(el); });
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      var item = trigger.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+        if (openItem !== item) {
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+        }
+      });
+      item.classList.toggle('open', !isOpen);
+      trigger.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+
+  /* ---------- Gallery + Lightbox ---------- */
+  var galleryImages = Array.from(document.querySelectorAll('#gallery-grid img, .gallery-swiper img')).reduce(function(unique, img) {
+    if (!unique.some(function(u) { return u.src === img.src; })) unique.push(img);
+    return unique;
+  }, []);
+
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightbox-img');
+  var lightboxCount = document.getElementById('lightbox-count');
+  var currentIndex = 0;
+  var lastFocused = null;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightboxImage();
+    lastFocused = document.activeElement;
+    lightbox.classList.remove('closed');
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lightbox-close').focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.add('closed');
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  function updateLightboxImage() {
+    var img = galleryImages[currentIndex];
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCount.textContent = (currentIndex + 1) + ' / ' + galleryImages.length;
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    updateLightboxImage();
+  }
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateLightboxImage();
+  }
+
+  document.querySelectorAll('.gallery-item').forEach(function(btn, i) {
+    btn.addEventListener('click', function() {
+      var src = btn.querySelector('img').src;
+      var idx = galleryImages.findIndex(function(im) { return im.src === src; });
+      openLightbox(idx < 0 ? 0 : idx);
+    });
+  });
+
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  document.getElementById('lightbox-next').addEventListener('click', showNext);
+  document.getElementById('lightbox-prev').addEventListener('click', showPrev);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'ArrowLeft') showPrev();
+  });
+
+  /* swipe support on lightbox image */
+  var touchStartX = null;
+  lightboxImg.addEventListener('touchstart', function(e) { touchStartX = e.touches[0].clientX; }, { passive: true });
+  lightboxImg.addEventListener('touchend', function(e) {
+    if (touchStartX === null) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    if (dx > 50) showPrev();
+    if (dx < -50) showNext();
+    touchStartX = null;
+  }, { passive: true });
+
+  /* ---------- Swiper (mobile gallery) ---------- */
+  function initSwiper() {
+    if (typeof Swiper === 'undefined') { setTimeout(initSwiper, 100); return; }
+    new Swiper('.gallery-swiper', {
+      slidesPerView: 1.25,
+      spaceBetween: 12,
+      pagination: { el: '.swiper-pagination', clickable: true },
+    });
+  }
+  initSwiper();
+
+  /* ---------- RSVP form ---------- */
+  var form = document.getElementById('rsvp-form');
+  var successMsg = document.getElementById('rsvp-success');
+
+  form.addEventListener('submit', function(e) {
+    var valid = true;
+    form.querySelectorAll('.error-msg').forEach(function(msg) { msg.classList.add('hidden'); });
+
+    var nombre = document.getElementById('nombre');
+    if (!nombre.value.trim()) {
+      valid = false;
+      nombre.parentElement.querySelector('.error-msg').classList.remove('hidden');
+    }
+
+    var asiste = form.querySelector('input[name="Asiste"]:checked');
+    if (!asiste) {
+      valid = false;
+      form.querySelector('fieldset .error-msg').classList.remove('hidden');
+    }
+
+    if (!valid) {
+      e.preventDefault();
+      return;
+    }
+
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Enviando…';
+    btn.disabled = true;
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function() {
+      form.classList.add('hidden');
+      successMsg.classList.remove('hidden');
+    }).catch(function() {
+      form.classList.add('hidden');
+      successMsg.classList.remove('hidden');
+    });
+  });
+
+  /* ---------- Verify anchor nav does not get stuck (self-check) ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      var targetId = link.getAttribute('href');
+      if (targetId.length <= 1) return;
+      var before = window.scrollY;
+      setTimeout(function() {
+        var after = window.scrollY;
+        if (after === before) {
+          var target = document.querySelector(targetId);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 600);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
