@@ -187,7 +187,7 @@
       <a href="#faq" class="link-underline">FAQ</a>
     </nav>
 
-    <a href="#rsvp" class="hidden lg:inline-flex btn-press hover-lift items-center border border-graphite px-6 py-3 text-sm tracking-wide hover:bg-graphite hover:text-paper">
+    <a href="#rsvp" id="rsvp-cta" class="hidden lg:inline-flex btn-press hover-lift items-center border px-6 py-3 text-sm tracking-wide">
       Confirmar asistencia
     </a>
 
@@ -766,7 +766,7 @@
       <a href="#rsvp" class="link-underline">RSVP</a>
     </nav>
 
-    <p class="text-xs text-graphite/60 mt-6">Diseño y desarrollo — Estudio Nacho Gallardo</p>
+    <p class="text-xs text-graphite/60 mt-6">Diseño y desarrollo — NGS</p>
   </div>
 </footer>
 
@@ -776,11 +776,16 @@
 
   /* ---------- Header scroll state ---------- */
   var header = document.getElementById('site-header');
+  var rsvpCta = document.getElementById('rsvp-cta');
   function onScroll() {
     if (window.scrollY > 24) {
       header.classList.add('bg-paper/95', 'border-line', 'backdrop-blur');
+      rsvpCta.classList.remove('border-paper', 'text-paper', 'hover:bg-paper', 'hover:text-graphite');
+      rsvpCta.classList.add('border-graphite', 'text-graphite', 'hover:bg-graphite', 'hover:text-paper');
     } else {
       header.classList.remove('bg-paper/95', 'border-line', 'backdrop-blur');
+      rsvpCta.classList.remove('border-graphite', 'text-graphite', 'hover:bg-graphite', 'hover:text-paper');
+      rsvpCta.classList.add('border-paper', 'text-paper', 'hover:bg-paper', 'hover:text-graphite');
     }
   }
   document.addEventListener('scroll', onScroll, { passive: true });
